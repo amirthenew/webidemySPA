@@ -7,13 +7,12 @@
     width: 100%;
 }
 
-.image {}
-
-.textContainer {
-    position: absolute;
-    top: 5rem;
-    left: 4rem;
+.image {
+    background-image: url(../images/banner.jpg) no-repeat contain;
+    height: 800px;
+    width: 100vw;
 }
+
 
 .textContainer h1 {
     font-size: 6rem;

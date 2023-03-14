@@ -10,7 +10,7 @@ const Logos = ()=>{
     return(
         <div className={styles.container}>
         <h3>Check our courses</h3>
-        <div>
+        <div className={styles.logos}>
         <img src={udemy} alt='udemy'/>
         <img src={udemy2} alt='udemy'/>
         <img src={freelance} alt='freelance'/>
