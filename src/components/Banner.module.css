@@ -3,14 +3,18 @@
     position: relative;
 }
 
-.container img {
+/* .container img {
     width: 100%;
-}
+} */
 
 .image {
-    background-image: url(../images/banner.jpg) no-repeat contain;
-    height: 800px;
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 
