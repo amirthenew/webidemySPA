@@ -1,6 +1,20 @@
 .container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     margin: 4rem 0 4rem;
+    justify-content: center;
+}
+
+@media only screen and (max-width:1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+}
+
+@media only screen and (max-width:681px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

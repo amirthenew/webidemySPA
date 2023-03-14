@@ -1,6 +1,5 @@
 .container img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
 
 }
 
@@ -12,11 +11,13 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: -5px -5px 20px 10px rgb(189, 189, 189);
+    display: flex;
 }
 
 .container h3 {
     color: #525252;
-    margin: 30px 20px 20px;
+    margin: .5rem 0;
+    text-align: center;
 }
 
 .container p {
@@ -28,28 +29,3 @@
     border-radius: 5px;
 
 }
-
-.counter {
-    display: flex;
-    align-items: center;
-    border-top: 1px solid rgb(255, 255, 255);
-}
-
-.counter img {
-    width: 20px !important;
-    height: 20px;
-    margin: 20px;
-    cursor: pointer;
-}
-
-.counter span {
-    background-color: rgb(255, 145, 0);
-    padding: 4px;
-    border-radius: 6px;
-    color: #fff;
-    font-weight: bold;
-}
-
-/* .deactive {
-    opacity: .3;
-} */

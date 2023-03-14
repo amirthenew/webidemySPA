@@ -1,27 +1,32 @@
-.container{
-display: flex;
+.container {
+    display: flex;
     background-color: blueviolet;
-}
-.photo img{
-width: 450px;
+    min-height: 600px;
+
 }
 
-.textbox{
+.photo {
+    background: url(../images/profile.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+
+}
+
+.textbox {
     font-size: 5rem;
-padding: 2rem;
-color: #fff;
+    padding: 2rem;
+    color: #fff;
+    width: 60vw;
 }
 
-.textbox h2{
+.textbox h2 {}
 
 
+.textbox p {
+
+    font-size: 2rem;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
 }
-
-
-.textbox p{
-
-font-size: 2rem;
-margin-top: 2rem;
-line-height: 2.5rem;
-letter-spacing: 1px;
-    }

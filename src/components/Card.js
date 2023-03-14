@@ -8,19 +8,14 @@ const {image,name,cost}=props
     
     return (
         <div className={styles.container}>
+
         <img src={image}/>
         <h3>{name}</h3>
 
-        
+        </div>
 
 
-</div>
-
-);
-
-
-
-}
+)}
 
 
 export default Card;
