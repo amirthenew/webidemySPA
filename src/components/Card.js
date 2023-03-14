@@ -3,7 +3,7 @@ import styles from './Card.module.css'
 
 const Card = (props) => {
 
-const {key,image,name,cost}=props
+const {image,name,cost}=props
 
     
     return (
