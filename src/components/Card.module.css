@@ -15,12 +15,12 @@
 }
 
 .container h3 {
-    color: #0b0b0b;
+    color: #525252;
     margin: 30px 20px 20px;
 }
 
 .container p {
-    color: #fff;
+    color: #6d6d6d;
     margin: 0 25px 20px;
     background-color: brown;
     width: fit-content;
@@ -44,12 +44,12 @@
 
 .counter span {
     background-color: rgb(255, 145, 0);
-    padding: 5px;
-    border-radius: 5px;
+    padding: 4px;
+    border-radius: 6px;
     color: #fff;
     font-weight: bold;
 }
 
-.deactive {
+/* .deactive {
     opacity: .3;
-}
+} */
