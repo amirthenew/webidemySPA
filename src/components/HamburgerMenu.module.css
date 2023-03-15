@@ -6,32 +6,6 @@
     justify-content: flex-end;
 }
 
-.hamicon {
-    width: 60px;
-    height: 60px;
-    background-color: #ff0000;
-    cursor: pointer;
-}
-
-.line1 {
-    width: 100%;
-    height: 15px;
-    background-color: #000;
-    margin: 4px 0 2px;
-}
-
-.line2 {
-    width: 100%;
-    height: 15px;
-    background-color: #000;
-    margin-bottom: 2px;
-}
-
-.line3 {
-    width: 100%;
-    height: 15px;
-    background-color: #000;
-}
 
 .dropdownmenu {
     position: absolute;
@@ -51,12 +25,4 @@
 
 .dropdown-menu li:hover {
     text-decoration: underline;
-}
-
-@media only screen and (min-width :449px) {
-
-    .hamicon {
-        display: none;
-    }
-
 }

@@ -4,13 +4,12 @@ import Cards from './Cards'
 import Search from './Search';
 import Logos from './Logos';
 import Profile from './Profile';
-import HamburgerMenu from './HamburgerMenu'
+
 class Landing extends Component {
     state = {  } 
     render() { 
         return (
             <div>
-            
             <Banner/>
         <Cards/>
         <Search/>

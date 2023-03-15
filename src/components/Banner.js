@@ -7,7 +7,6 @@ const Banner = () => {
         <div className={styles.container}>
         
 <div className={styles.image}>
-<HamburgerMenu/>
 </div>
 
         </div>

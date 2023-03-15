@@ -7,6 +7,10 @@ const Navbar = ()=>{
 
 return(
     <header className={styles.header}>
+    <div className={styles.logo}>
+    <img alt="webidemylogo" src={logo}/>
+    </div>
+    
     <HamburgerMenu/>
     <div className={styles.listContainer}>
     <ul className={styles.list}>
@@ -18,10 +22,7 @@ return(
     </ul>
     </div>
 
-    <div className={styles.logo}>
-    <img alt="webidemylogo" src={logo}/>
-    </div>
-    
+
     </header>
 )
 

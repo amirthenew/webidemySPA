@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './HamburgerMenu.module.css'
+import HamburgerIcon from './HamburgerIcon';
 
 const HamburgerMenu = () => {
 
@@ -9,12 +10,8 @@ const HamburgerMenu = () => {
     }
 
     return ( <div className={styles.container}>
-
-        <div className={styles.hamicon} onClick={handleClick}>
-            <div className={styles.line1}></div>
-            <div className={styles.line2}></div>
-            <div className={styles.line3}></div>
-        </div>
+        <HamburgerIcon handleClick={handleClick}/>
+        
         {isOpen && (
             
             <ul className={styles.dropdownmenu}>
