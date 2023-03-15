@@ -9,12 +9,12 @@ class Landing extends Component {
     state = {  } 
     render() { 
         return (
-            <div>
+        <div>
             <Banner/>
-        <Cards/>
-        <Search/>
-        <Profile/>
-        <Logos/>
+            <Cards/>
+            <Search/>
+            <Profile/>
+            <Logos/>
         </div>);
         
     }

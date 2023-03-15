@@ -1,13 +1,15 @@
 import React from 'react';
 import styles from './Banner.module.css';
-import HamburgerMenu from './HamburgerMenu';
 
 const Banner = () => {
     return (  
         <div className={styles.container}>
         
-<div className={styles.image}>
-</div>
+        <div className={styles.image}>
+        </div>
+        
+        
+        
 
         </div>
     );
@@ -15,5 +17,9 @@ const Banner = () => {
  
 export default Banner;
 
+
+
+// <div className={styles.image}>
+// </div>
 
 

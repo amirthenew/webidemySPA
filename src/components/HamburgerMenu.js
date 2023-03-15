@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import styles from './HamburgerMenu.module.css'
-import HamburgerIcon from './HamburgerIcon';
+import styles from './HamburgerMenu.module.css';
+import { Link } from 'react-router-dom';
 
-const HamburgerMenu = () => {
+const HamburgerMenu = (props) => {
 
     const[isOpen,setItOpen]=useState(false)
     const handleClick = ()=>{
@@ -10,15 +10,22 @@ const HamburgerMenu = () => {
     }
 
     return ( <div className={styles.container}>
-        <HamburgerIcon handleClick={handleClick}/>
+        <div className={styles.hamicon} onClick={handleClick}  >
+        <div className={styles.line1}></div>
+        <div className={styles.line2}></div>
+        <div className={styles.line3}></div>
+    </div>
         
         {isOpen && (
             
-            <ul className={styles.dropdownmenu}>
-            <a href=''><li>item1</li></a>
-            <a href=''><li>item2</li></a>
-            <a href=''><li>item3</li></a>
-            </ul>
+<div>
+<ul className={styles.dropdownmenu}>
+<li><Link to='/'>Home</Link></li>
+    <li><Link to='/products'>Product</Link></li>
+    <li><Link to='/aboutus'>About Us</Link></li>
+    <li><Link to='/'>Contact Us</Link></li>
+</ul>
+</div>
             )}
 
         </div> );
