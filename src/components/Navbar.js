@@ -2,10 +2,12 @@ import React from "react";
 import styles from './Navbar.module.css'
 import logo from '../images/logo.png'
 import { Link } from "react-router-dom";
+import HamburgerMenu from "./HamburgerMenu";
 const Navbar = ()=>{
 
 return(
     <header className={styles.header}>
+    <HamburgerMenu/>
     <div className={styles.listContainer}>
     <ul className={styles.list}>
     
