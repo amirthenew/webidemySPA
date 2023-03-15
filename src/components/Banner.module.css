@@ -1,6 +1,7 @@
 .container {
     width: 100%;
     position: relative;
+
 }
 
 /* .container img {
@@ -11,7 +12,6 @@
     background: url(../images/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
     display: flex;
     min-height: 100vh;
     flex-direction: column;

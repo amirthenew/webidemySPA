@@ -8,8 +8,6 @@ const Banner = () => {
         
 <div className={styles.image}>
 <HamburgerMenu/>
-<h1>Webidemy</h1>
-<p>Make it onilne and <span>Jump</span>!</p>
 </div>
 
         </div>
