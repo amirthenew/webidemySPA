@@ -1,3 +1,5 @@
+.maindiv {}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -76,9 +78,9 @@
     z-index: 90;
     width: 100%;
     flex-direction: column;
-    width: 100vw;
     color: #fff;
     text-align: center;
+
 
 
 }

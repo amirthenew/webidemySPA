@@ -2,7 +2,6 @@ import React ,{useState}from "react";
 import styles from './Navbar.module.css'
 import logo from '../images/logo.png'
 import { Link } from "react-router-dom";
-import HamburgerMenu from "./HamburgerMenu";
 import HamburgerIcon from "./HamburgerIcon";
 const Navbar = ()=>{
 
@@ -12,7 +11,7 @@ const Navbar = ()=>{
         console.log('ok');
     }
 
-return(<div>
+return(<div className={styles.maindiv}>
     <header className={styles.header}>
     <div className={styles.logo}>
     <img alt="webidemylogo" src={logo}/>
@@ -31,10 +30,10 @@ return(<div>
         {isOpen && (    
 <div className={styles.menubox}>
 <ul className={styles.dropdownmenu}>
-    <li className={styles.hamLi}><Link className={styles.Link} to='/'>Home</Link></li>
-    <li className={styles.hamLi}><Link className={styles.Link} to='/products'>Product</Link></li>
-    <li className={styles.hamLi}><Link className={styles.Link} to='/aboutus'>About Us</Link></li>
-    <li className={styles.hamLi}><Link className={styles.Link} to='/'>Contact Us</Link></li>
+  <Link className={styles.Link} to='/'><li className={styles.hamLi}>Home</li></Link>
+    <Link className={styles.Link} to='/products'><li className={styles.hamLi}>Products</li></Link>
+   <Link className={styles.Link} to='/aboutus'><li className={styles.hamLi}>About Us</li></Link>
+   <Link className={styles.Link} to='/'><li className={styles.hamLi}>Contact Us</li></Link>
 </ul>
 </div>
             )}
