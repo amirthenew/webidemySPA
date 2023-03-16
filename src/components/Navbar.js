@@ -9,7 +9,11 @@ const Navbar = ()=>{
     const handleClick = ()=>{
         setItOpen(!isOpen)
         console.log('ok');
+
+
     }
+
+
 
 return(<div className={styles.maindiv}>
     <header className={styles.header}>
@@ -24,19 +28,21 @@ return(<div className={styles.maindiv}>
     <li><Link to='/'>Contact Us</Link></li>
     </ul>
     </div>
-    <HamburgerIcon handleClick={handleClick}/>
+    <HamburgerIcon handleClick={handleClick} isOpen={isOpen}/>
     </header>
     <div className={styles.container}>
         {isOpen && (    
 <div className={styles.menubox}>
 <ul className={styles.dropdownmenu}>
-  <Link className={styles.Link} to='/'><li className={styles.hamLi}>Home</li></Link>
-    <Link className={styles.Link} to='/products'><li className={styles.hamLi}>Products</li></Link>
-   <Link className={styles.Link} to='/aboutus'><li className={styles.hamLi}>About Us</li></Link>
-   <Link className={styles.Link} to='/'><li className={styles.hamLi}>Contact Us</li></Link>
+  <Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Home</li></Link>
+    <Link onClick={handleClick} className={styles.Link} to='/products'><li className={styles.hamLi}>Products</li></Link>
+   <Link onClick={handleClick} className={styles.Link} to='/aboutus'><li className={styles.hamLi}>About Us</li></Link>
+   <Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Contact Us</li></Link>
 </ul>
 </div>
-            )}
+            )
+        
+        }
         </div>
     </div>
     
