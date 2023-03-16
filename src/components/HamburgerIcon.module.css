@@ -9,10 +9,18 @@
     height: 5px;
     background-color: #ffffff;
     margin: 18px 0 4px;
+    transition: all .5s;
 }
 
 .line1close {
-    transform: rotateX(45deg);
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 18px 0 4px;
+    transform: rotate(-45deg) translateY(5px) translateX(-5px);
+    transition: all .5s;
+
+
 }
 
 .line2 {
@@ -20,14 +28,34 @@
     height: 5px;
     background-color: #ffffff;
     margin-bottom: 4px;
+    opacity: 1;
+    transition: all .5s;
 }
 
-.line2close {}
+.line2close {
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    margin-bottom: 4px;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all .3s;
+}
 
 .line3 {
     width: 100%;
     height: 5px;
     background-color: #ffffff;
+    transition: all .5s;
+}
+
+.line3close {
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    transform: rotate(45deg) translateY(-8px) translateX(-7px);
+    transition: all .5s;
+
 }
 
 @media only screen and (min-width :449px) {
