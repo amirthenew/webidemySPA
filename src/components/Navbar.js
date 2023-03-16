@@ -1,10 +1,16 @@
-import React from "react";
+import React ,{useState}from "react";
 import styles from './Navbar.module.css'
 import logo from '../images/logo.png'
 import { Link } from "react-router-dom";
 import HamburgerMenu from "./HamburgerMenu";
 import HamburgerIcon from "./HamburgerIcon";
 const Navbar = ()=>{
+
+    const[isOpen,setItOpen]=useState(false)
+    const handleClick = ()=>{
+        setItOpen(!isOpen)
+        console.log('ok');
+    }
 
 return(<div>
     <header className={styles.header}>
@@ -19,9 +25,20 @@ return(<div>
     <li><Link to='/'>Contact Us</Link></li>
     </ul>
     </div>
-    <HamburgerIcon/>
+    <HamburgerIcon handleClick={handleClick}/>
     </header>
-    <HamburgerMenu handleClick={handleClick} />
+    <div className={styles.container}>
+        {isOpen && (    
+<div className={styles.menubox}>
+<ul className={styles.dropdownmenu}>
+    <li><Link to='/'>Home</Link></li>
+    <li><Link to='/products'>Product</Link></li>
+    <li><Link to='/aboutus'>About Us</Link></li>
+    <li><Link to='/'>Contact Us</Link></li>
+</ul>
+</div>
+            )}
+        </div>
     </div>
     
 

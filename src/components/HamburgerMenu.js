@@ -8,11 +8,8 @@ const HamburgerMenu = () => {
     const handleClick = ()=>{
         setItOpen(!isOpen)
     }
-
     return ( <div className={styles.container}>
-        
-        {isOpen && (
-            
+        {isOpen && (    
 <div className={styles.menubox}>
 <ul className={styles.dropdownmenu}>
     <li><Link to='/'>Home</Link></li>
@@ -22,8 +19,5 @@ const HamburgerMenu = () => {
 </ul>
 </div>
             )}
-
-        </div> );
-}
- 
+        </div> )}
 export default HamburgerMenu;
