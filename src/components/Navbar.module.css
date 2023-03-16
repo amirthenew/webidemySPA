@@ -6,6 +6,9 @@
     background-color: #252525;
     align-items: center;
     padding: 0 2rem;
+    position: relative;
+    z-index: 99;
+
 
 }
 
@@ -67,6 +70,8 @@
 
 .menubox {
     width: 100%;
+
+    z-index: 3;
 }
 
 
@@ -75,11 +80,14 @@
     border: none;
     list-style: none;
     position: relative;
-    z-index: 90;
+    z-index: 1;
     width: 100%;
     flex-direction: column;
     color: #fff;
     text-align: center;
+    animation: dropdownfadein .5s;
+
+
 
 
 
@@ -134,5 +142,36 @@
     .dropdownmenu {
         display: none;
     }
+
+}
+
+@keyframes dropdownfadein {
+
+    from {
+        top: -300px;
+    }
+
+    to {
+
+        top: 0px;
+
+    }
+
+
+
+}
+
+@keyframes dropdown {
+
+    from {
+        top: -300px;
+    }
+
+    to {
+
+        top: 0px;
+
+    }
+
 
 }
