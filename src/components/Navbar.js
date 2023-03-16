@@ -31,10 +31,10 @@ return(<div>
         {isOpen && (    
 <div className={styles.menubox}>
 <ul className={styles.dropdownmenu}>
-    <li><Link to='/'>Home</Link></li>
-    <li><Link to='/products'>Product</Link></li>
-    <li><Link to='/aboutus'>About Us</Link></li>
-    <li><Link to='/'>Contact Us</Link></li>
+    <li className={styles.hamLi}><Link className={styles.Link} to='/'>Home</Link></li>
+    <li className={styles.hamLi}><Link className={styles.Link} to='/products'>Product</Link></li>
+    <li className={styles.hamLi}><Link className={styles.Link} to='/aboutus'>About Us</Link></li>
+    <li className={styles.hamLi}><Link className={styles.Link} to='/'>Contact Us</Link></li>
 </ul>
 </div>
             )}
