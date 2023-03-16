@@ -3,11 +3,11 @@ import styles from './Navbar.module.css'
 import logo from '../images/logo.png'
 import { Link } from "react-router-dom";
 import HamburgerMenu from "./HamburgerMenu";
+import HamburgerIcon from "./HamburgerIcon";
 const Navbar = ()=>{
 
 return(<div>
     <header className={styles.header}>
-    
     <div className={styles.logo}>
     <img alt="webidemylogo" src={logo}/>
     </div>
@@ -19,10 +19,9 @@ return(<div>
     <li><Link to='/'>Contact Us</Link></li>
     </ul>
     </div>
-
-
+    <HamburgerIcon/>
     </header>
-    <HamburgerMenu/>
+    <HamburgerMenu handleClick={handleClick} />
     </div>
     
 
