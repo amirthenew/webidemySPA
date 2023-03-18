@@ -3,6 +3,7 @@
     background-color: blueviolet;
     min-height: 700px;
     justify-content: center;
+    flex-direction: column;
 
 }
 
@@ -10,7 +11,8 @@
     background: url(../images/profile.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 40vw;
+    width: 300px;
+    height: 300px;
 
 }
 
@@ -18,7 +20,7 @@
     font-size: 5rem;
     padding: 2rem;
     color: #fff;
-    width: 60vw;
+    width: 400px;
 }
 
 .textbox h2 {}
@@ -30,4 +32,10 @@
     margin-top: 2rem;
     line-height: 2.5rem;
     letter-spacing: 1px;
+}
+
+@media only screen and (max-width:900px) {
+    .container {}
+
+    .photo {}
 }

@@ -1,7 +1,7 @@
 .container {
     width: 100%;
-    position: absolute;
-    top: 0;
+    position: relative;
+
 
 }
 
@@ -16,6 +16,8 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+
+
 }
 
 
