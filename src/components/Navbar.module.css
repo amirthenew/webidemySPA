@@ -88,13 +88,10 @@
     animation: dropdownfadein .5s;
 
 
-
-
-
 }
 
 .dropupmenu {
-    background-color: #000000;
+    background-color: #555555;
     border: none;
     list-style: none;
     position: relative;
@@ -103,7 +100,7 @@
     flex-direction: column;
     color: #fff;
     text-align: center;
-    animation: dropdownfadeout .5s;
+    animation: dropdownfadeout 5s;
 }
 
 
