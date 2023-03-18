@@ -32,7 +32,7 @@ return(<div className={styles.maindiv}>
     <div className={styles.container}>
         {isOpen && (    
 <div className={styles.menubox}>
-<ul className={`${isOpen ? styles.dropdownmenu : styles.dropupmenu}`}>
+<ul className={`${isOpen ? console.log('dropdown') : console.log('dropup')}`}>
   <Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Home</li></Link>
     <Link onClick={handleClick} className={styles.Link} to='/products'><li className={styles.hamLi}>Products</li></Link>
    <Link onClick={handleClick} className={styles.Link} to='/aboutus'><li className={styles.hamLi}>About Us</li></Link>
