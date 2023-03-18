@@ -3,14 +3,17 @@
     background-color: blueviolet;
     min-height: 700px;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
 
 }
 
 .photo {
+    display: flex;
     background: url(../images/profile.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 400px;
+    width: 50%;
 
 
 }
@@ -19,7 +22,7 @@
     font-size: 5rem;
     padding: 2rem;
     color: #fff;
-    width: 400px;
+    width: 50%;
 }
 
 .textbox h2 {}
@@ -34,7 +37,39 @@
 }
 
 @media only screen and (max-width:900px) {
-    .container {}
+    .container {
+        display: flex;
+        background-color: blueviolet;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-    .photo {}
+    .textbox {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+        width: auto;
+
+
+    }
+
+
+    .photo {
+        background-size: cover;
+        width: 100vw;
+        height: 600px;
+    }
+
+
+}
+
+@media only screen and (max-width:376px) {
+    .textbox p {
+
+        font-size: 1rem;
+
+
+    }
 }

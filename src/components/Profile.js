@@ -5,7 +5,7 @@ const Profile = () => {
 
         
         <div className={styles.container}>
-        <div className={styles.photo}>asdassd</div>
+        <div className={styles.photo}></div>
           <div className={styles.textbox}>
             <h2>Who I Am ?!</h2>
             <p>
