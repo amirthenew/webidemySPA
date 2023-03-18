@@ -8,7 +8,6 @@ const Navbar = ()=>{
     const[isOpen,setItOpen]=useState(false)
     const handleClick = ()=>{
         setItOpen(!isOpen)
-        console.log('ok');
 
 
     }
@@ -33,7 +32,7 @@ return(<div className={styles.maindiv}>
     <div className={styles.container}>
         {isOpen && (    
 <div className={styles.menubox}>
-<ul className={styles.dropdownmenu}>
+<ul className={`${!isOpen ? styles.dropupmenu : styles.dropdownmenu}`}>
   <Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Home</li></Link>
     <Link onClick={handleClick} className={styles.Link} to='/products'><li className={styles.hamLi}>Products</li></Link>
    <Link onClick={handleClick} className={styles.Link} to='/aboutus'><li className={styles.hamLi}>About Us</li></Link>
