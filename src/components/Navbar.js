@@ -10,8 +10,6 @@ const Navbar = ()=>{
         setItOpen(!isOpen)
     }
 
-console.log(isOpen);
-
 return(<div className={styles.maindiv}>
     <header className={styles.header}>
     <div className={styles.logo}>
@@ -31,11 +29,10 @@ return(<div className={styles.maindiv}>
         {isOpen && (    
 <div className={styles.menubox}>
 <ul className={`${isOpen ? styles.dropdownmenu : styles.dropupmenu}`}>
-
-  <Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Home</li></Link>
-    <Link onClick={handleClick} className={styles.Link} to='/products'><li className={styles.hamLi}>Products</li></Link>
-   <Link onClick={handleClick} className={styles.Link} to='/aboutus'><li className={styles.hamLi}>About Us</li></Link>
-   <Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Contact Us</li></Link>
+<Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Home</li></Link>
+<Link onClick={handleClick} className={styles.Link} to='/products'><li className={styles.hamLi}>Products</li></Link>
+<Link onClick={handleClick} className={styles.Link} to='/aboutus'><li className={styles.hamLi}>About Us</li></Link>
+<Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Contact Us</li></Link>
 </ul>
 </div>
             )
