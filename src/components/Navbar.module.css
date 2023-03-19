@@ -58,18 +58,7 @@
         width: 12vw;
     }
 
-    .dropupmenu {
-        background-color: #555555;
-        border: none;
-        list-style: none;
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        flex-direction: column;
-        color: #fff;
-        text-align: center;
-        animation: dropdownfadeout 2s ease-out;
-    }
+
 
 
 }
@@ -90,6 +79,18 @@
     z-index: 3;
 }
 
+.dropupmenu {
+    background-color: #555555;
+    border: none;
+    list-style: none;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    animation: dropdownfadeout 2s ease-out;
+}
 
 .dropdownmenu {
     background-color: #555555;
