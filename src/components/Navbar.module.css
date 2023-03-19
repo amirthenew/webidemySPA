@@ -58,6 +58,38 @@
         width: 12vw;
     }
 
+    .dropdownmenu {
+        background-color: #555555;
+        border: none;
+        list-style: none;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        flex-direction: column;
+        color: #fff;
+        text-align: center;
+        animation: dropdownfadein .5s ease-in;
+
+
+    }
+
+    .dropupmenu {
+        background-color: #555555;
+        border: none;
+        list-style: none;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        flex-direction: column;
+        color: #fff;
+        text-align: center;
+        animation: dropdownfadeout 2s ease-out;
+
+    }
+
+
+
+
 
 
 
@@ -79,36 +111,6 @@
     z-index: 3;
 }
 
-.dropupmenu {
-    background-color: #555555;
-    border: none;
-    list-style: none;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    flex-direction: column;
-    color: #fff;
-    text-align: center;
-    animation: dropdownfadeout 2s ease-out;
-}
-
-.dropdownmenu {
-    background-color: #555555;
-    border: none;
-    list-style: none;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    flex-direction: column;
-    color: #fff;
-    text-align: center;
-    animation: dropdownfadein .5s ease-in;
-
-
-}
-
-
-
 .hamLi {
     padding: 1rem;
     border-bottom: 1px solid #7e7e7e;
@@ -121,6 +123,8 @@
 
 }
 
+/* desktop class */
+
 @media only screen and (min-width :449px) {
 
     .hamicon {
@@ -132,6 +136,10 @@
 
     }
 
+    .dropupmenu {
+        display: none;
+    }
+
 
 }
 
@@ -139,15 +147,15 @@
 
     from {
         top: 0;
+        display: flex;
     }
 
     to {
 
         top: -300px;
+        display: none;
 
     }
-
-
 
 }
 
@@ -160,6 +168,7 @@
     to {
 
         top: 0px;
+
 
     }
 
