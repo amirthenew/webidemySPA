@@ -48,52 +48,7 @@
 }
 
 
-@media only screen and (max-width :450px) {
 
-    .listContainer {
-        display: none;
-    }
-
-    .logo img {
-        width: 12vw;
-    }
-
-    .dropdownmenu {
-        background-color: #555555;
-        border: none;
-        list-style: none;
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        flex-direction: column;
-        color: #fff;
-        text-align: center;
-        animation: dropdownfadein .5s ease-in;
-
-
-    }
-
-    .dropupmenu {
-        background-color: #555555;
-        border: none;
-        list-style: none;
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        flex-direction: column;
-        color: #fff;
-        text-align: center;
-        animation: dropdownfadeout 2s ease-out;
-
-    }
-
-
-
-
-
-
-
-}
 
 .container {
     /* width: 300px;
@@ -106,8 +61,6 @@
 .menubox {
     width: 100%;
     position: absolute;
-
-
     z-index: 3;
 }
 
@@ -127,15 +80,8 @@
 
 @media only screen and (min-width :449px) {
 
-    .hamicon {
-        display: none;
-    }
-
-    .dropdownmenu {
-        display: none;
-
-    }
-
+    .hamicon,
+    .dropdownmenu,
     .dropupmenu {
         display: none;
     }
@@ -143,35 +89,77 @@
 
 }
 
-@keyframes dropdownfadeout {
+@media only screen and (max-width :450px) {
 
-    from {
-        top: 0;
-        display: flex;
-    }
-
-    to {
-
-        top: -300px;
+    .listContainer {
         display: none;
-
     }
 
+    .logo img {
+        width: 12vw;
+    }
+
+    .menubox {
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+
+        animation: menuhider 2s;
+    }
+
+    .dropdownmenu {
+        background-color: #555555;
+        border: none;
+        list-style: none;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        flex-direction: column;
+        color: #fff;
+        text-align: center;
+        animation: dropdownfadein .5s ease-in;
+    }
+
+    .dropupmenu {
+        background-color: #555555;
+        border: none;
+        list-style: none;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        flex-direction: column;
+        color: #fd0000;
+        text-align: center;
+        animation: dropdownfadeout 1s ease-in;
+    }
 }
+
+
 
 @keyframes dropdownfadein {
 
     from {
         top: -300px;
+
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes dropdownfadeout {
+
+    from {
+        top: 0;
+
     }
 
     to {
 
-        top: 0px;
+        top: -300px;
 
 
     }
-
-
 
 }

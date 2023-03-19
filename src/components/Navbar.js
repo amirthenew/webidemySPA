@@ -26,7 +26,7 @@ return(<div className={styles.maindiv}>
     <HamburgerIcon handleClick={handleClick} isOpen={isOpen}/>
     </header>
     <div className={styles.container}>
-        {!!isOpen ? (    
+        {isOpen ? (    
 <div className={styles.menubox}>
 <ul className={styles.dropdownmenu}>
 <Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Home</li></Link>
@@ -34,7 +34,10 @@ return(<div className={styles.maindiv}>
 <Link onClick={handleClick} className={styles.Link} to='/aboutus'><li className={styles.hamLi}>About Us</li></Link>
 <Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Contact Us</li></Link>
 </ul>
-{console.log(isOpen)}
+{console.log(isOpen)
+} 
+{console.log('dropdown')}
+
 </div>
 
 ) : 
@@ -46,6 +49,7 @@ return(<div className={styles.maindiv}>
     <Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Contact Us</li></Link>
     </ul>
     {console.log(isOpen)}
+    {console.log('dropUp')}
 </div>
 
         
