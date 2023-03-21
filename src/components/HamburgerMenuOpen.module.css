@@ -1,3 +1,49 @@
+.maindiv {}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #252525;
+    align-items: center;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 4;
+
+
+}
+
+
+
+
+
+
+
+.list {
+    display: flex;
+    list-style: none;
+
+}
+
+.list li {
+    padding: 1rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.list li a:hover {
+    color: rgb(212, 212, 212);
+    transition: all .3s;
+}
+
+.list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
 .container {
     /* width: 300px;
     height: 100vh; */
@@ -8,68 +54,101 @@
 
 .menubox {
     width: 100%;
+    position: absolute;
+    z-index: 3;
+}
+
+.hamLi {
+    padding: 1rem;
+    border-bottom: 1px solid #7e7e7e;
 }
 
 
-.dropdownmenu {
-    background-color: #252525;
-    border: none;
-    list-style: none;
-
-    position: relative;
-    z-index: 90;
-    width: 100%;
-    flex-direction: column;
-    width: 100vw;
+.Link {
     color: #fff;
-    text-align: center;
-
-}
-
-
-.dropdown-menu li {
-    cursor: pointer;
     text-decoration: none;
+
 }
 
-.dropdown-menu li:hover {
-    text-decoration: underline;
-}
-
-.hamicon {
-    width: 10vw;
-    height: 60px;
-    cursor: pointer;
-}
-
-.line1 {
-    width: 100%;
-    height: 5px;
-    background-color: #000000;
-    margin: 18px 0 4px;
-}
-
-.line2 {
-    width: 100%;
-    height: 5px;
-    background-color: #000000;
-    margin-bottom: 4px;
-}
-
-.line3 {
-    width: 100%;
-    height: 5px;
-    background-color: #000000;
-}
+/* desktop class */
 
 @media only screen and (min-width :449px) {
 
-    .hamicon {
+    .hamicon,
+    .dropdownmenu,
+    .dropupmenu {
         display: none;
+    }
+
+
+}
+
+@media only screen and (max-width :450px) {
+
+    .listContainer {
+        display: none;
+    }
+
+    .logo img {
+        width: 12vw;
+    }
+
+    .menubox {
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+
+        animation: menuhider 2s;
     }
 
     .dropdownmenu {
-        display: none;
+        background-color: #555555;
+        border: none;
+        list-style: none;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        flex-direction: column;
+        color: #fff;
+        text-align: center;
+        animation: dropup .5s ease-out;
+        animation-fill-mode: forwards;
+
+
     }
 
+    .dropupmenu {
+        background-color: #555555;
+        border: none;
+        list-style: none;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        animation: dropdown 1s ease-in;
+
+    }
+}
+
+@keyframes dropdown {
+
+    from {
+        top: -300px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes dropup {
+
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -300px;
+    }
 }
