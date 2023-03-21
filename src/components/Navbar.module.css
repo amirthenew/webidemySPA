@@ -119,6 +119,7 @@
         text-align: center;
         animation: dropup .5s ease-out;
 
+
     }
 
     .dropupmenu {
@@ -131,7 +132,7 @@
         flex-direction: column;
         color: #fd0000;
         text-align: center;
-        animation: dropdown 1s ease-in;
+        animation: dropdown 1s linear;
 
     }
 }
@@ -166,6 +167,8 @@
 
 
 
+
     }
+
 
 }
