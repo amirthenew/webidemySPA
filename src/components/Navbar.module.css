@@ -137,19 +137,14 @@
     }
 }
 
-
-
 @keyframes dropdown {
 
     from {
         top: -300px;
-
-
     }
 
     to {
         top: 0px;
-
     }
 }
 
@@ -157,18 +152,9 @@
 
     from {
         top: 0;
-
-
     }
 
     to {
-
         top: -300px;
-
-
-
-
     }
-
-
 }
