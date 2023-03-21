@@ -10,6 +10,8 @@ const Navbar = ()=>{
         setItOpen(!isOpen)
     }
 
+
+
 return(<div className={styles.maindiv}>
     <header className={styles.header}>
     <div className={styles.logo}>
