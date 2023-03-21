@@ -117,7 +117,8 @@
         flex-direction: column;
         color: #fff;
         text-align: center;
-        animation: dropdownfadein .5s ease-in;
+        animation: dropup .5s ease-out;
+
     }
 
     .dropupmenu {
@@ -130,34 +131,39 @@
         flex-direction: column;
         color: #fd0000;
         text-align: center;
-        animation: dropdownfadeout 1s ease-in;
+        animation: dropdown 1s ease-in;
+
     }
 }
 
 
 
-@keyframes dropdownfadein {
+@keyframes dropdown {
 
     from {
         top: -300px;
+
 
     }
 
     to {
         top: 0px;
+
     }
 }
 
-@keyframes dropdownfadeout {
+@keyframes dropup {
 
     from {
         top: 0;
+
 
     }
 
     to {
 
         top: -300px;
+
 
 
     }
