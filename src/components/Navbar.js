@@ -3,6 +3,7 @@ import styles from './Navbar.module.css'
 import logo from '../images/logo.png'
 import { Link } from "react-router-dom";
 import HamburgerIcon from "./HamburgerIcon";
+import HamburgerMenuOpen from './HamburgerMenuOpen'
 const Navbar = ()=>{
 
     const[isOpen,setItOpen]=useState(false)
@@ -29,18 +30,7 @@ return(<div className={styles.maindiv}>
     </header>
     <div className={styles.container}>
         {isOpen ? (    
-<div className={styles.menubox}>
-<ul className={styles.dropdownmenu}>
-<Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Home</li></Link>
-<Link onClick={handleClick} className={styles.Link} to='/products'><li className={styles.hamLi}>Products</li></Link>
-<Link onClick={handleClick} className={styles.Link} to='/aboutus'><li className={styles.hamLi}>About Us</li></Link>
-<Link onClick={handleClick} className={styles.Link} to='/'><li className={styles.hamLi}>Contact Us</li></Link>
-</ul>
-{console.log(isOpen)
-} 
-{console.log('dropdown')}
-
-</div>
+<HamburgerMenuOpen handleClick={handleClick} isOpen={isOpen}/>
 
 ) : 
 <div className={styles.menubox}>
