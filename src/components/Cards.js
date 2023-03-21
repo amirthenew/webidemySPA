@@ -17,6 +17,8 @@ const Cards = () => {
     ])
 
     return ( <div className={styles.container}>
+
+
         {postData.map(post =>
         <Card 
         key={post.id} 
