@@ -16,8 +16,12 @@ const Cards = () => {
         {id : 4,image :post4,name:'post4', cost:'40$' }
     ])
 
-    return ( <div className={styles.container}>
-
+    return ( 
+        
+        <div>
+        <h2 className={styles.heading2}>Instagram posts</h2>
+        <div className={styles.container}>
+        
 
         {postData.map(post =>
         <Card 
@@ -28,7 +32,10 @@ const Cards = () => {
         />
         
         )}
-                </div> );
+                </div>
+        
+        </div>
+ );
 }
  
 export default Cards;

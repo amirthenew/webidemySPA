@@ -5,6 +5,11 @@
     margin: 60px;
 
 }
+.logos {
+    display: flex;
+    flex-direction: row;
+
+}
 
 .container h3 {
     color: #505050;
@@ -30,5 +35,14 @@
 @media only screen and (max-width:800px) {
     .container h3 {
         font-size: 2rem;
+    }
+    .logos{
+display: flex;
+flex-direction: column;
+    }
+
+    .logos img {
+        width: 30vw;
+        padding: 1rem 0 ;
     }
 }
