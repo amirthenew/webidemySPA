@@ -7,6 +7,7 @@ import AboutUs from './components/AboutUs';
 import Details from './components/Details';
 import Page404 from './components/Page404';
 import Programmers from './components/Programmers';
+import ContactUs from './components/ContactUs';
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
 <Routes>
 <Route path='/' element={<Landing/>}/>
     <Route path ='/aboutus/*' element={<AboutUs/>}/>
+    <Route path="/contactus" element={<ContactUs/>} />
     <Route path="programmers" element={<Programmers/>}/>
     <Route path="drivers" element={<h1>drivers</h1>} />
     <Route path='/products/:id' element={<Details/>}/>
