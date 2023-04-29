@@ -28,7 +28,7 @@ return(<div className={styles.maindiv}>
     <li><Link to='/'>Home</Link></li>
     <li><Link to='/products'>Product</Link></li>
     <li><Link to='/aboutus'>About Us</Link></li>
-    <li><Link to='/'>Contact Us</Link></li>
+    <li><Link to='/contactus'>Contact Us</Link></li>
     </ul>
     </div>
     <HamburgerIcon handleClick={handleClick} isOpen={isOpen}/>
