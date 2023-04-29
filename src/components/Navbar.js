@@ -1,4 +1,4 @@
-import React ,{useState}from "react";
+import React ,{useState,useEffect}from "react";
 import styles from './Navbar.module.css'
 import logo from '../images/logo.png'
 import { Link } from "react-router-dom";
@@ -7,11 +7,15 @@ import HamburgerMenuOpen from './HamburgerMenuOpen'
 import HamburgerMenuClose from './HambugerMenuClose'
 const Navbar = ()=>{
 
+    useEffect(()=>{
+        setItOpen(!isOpen)
+    },[])
+
+
     const[isOpen,setItOpen]=useState(false)
     const handleClick = ()=>{
         setItOpen(!isOpen)
     }
-
 
 
 return(<div className={styles.maindiv}>
