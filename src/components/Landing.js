@@ -11,10 +11,10 @@ class Landing extends Component {
         return (
         <div>
             <Banner/>
-            <Cards/>
+            <Logos/>
             <Search/>
             <Profile/>
-            <Logos/>
+            <Cards/>
         </div>);
         
     }

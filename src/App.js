@@ -10,16 +10,15 @@ import Programmers from './components/Programmers';
 
 const App = () => {
 
-    alert('This Project is processing')
+
   return (
     <div>
 <Navbar/>
 <Routes>
 <Route path='/' element={<Landing/>}/>
-    <Route path ='/aboutus/*' element={<AboutUs/>}>
+    <Route path ='/aboutus/*' element={<AboutUs/>}/>
     <Route path="programmers" element={<Programmers/>}/>
     <Route path="drivers" element={<h1>drivers</h1>} />
-    </Route>
     <Route path='/products/:id' element={<Details/>}/>
     <Route path ='/404' element={<Page404/>}/>
     <Route path ='/*' element={<Navigate to ="/404"/>}/>
