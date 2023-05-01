@@ -17,22 +17,13 @@ const ContactUs = () => {
 
 
     return ( 
-
-
     <div>
     <styledContainer>
     <StyledHeading>
     contactus
     </StyledHeading>
     </styledContainer>
-    </div>
-
-
-
-
-        
-
-      
+    </div>  
   );
 }
  
