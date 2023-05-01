@@ -5,6 +5,10 @@
     margin: 60px;
 
 }
+
+.css3{
+    width: 120px !important;
+}
 .logos {
     display: flex;
     flex-direction: row;

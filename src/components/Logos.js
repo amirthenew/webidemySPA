@@ -15,7 +15,7 @@ const Logos = ()=>{
         <h3>My skills</h3>
         <div className={styles.logos}>
         <img src={html} alt='html'/>
-        <img src={css} alt='css'/>
+        <img className={styles.css3} src={css} alt='css'/>
         <img src={js} alt='js'/>
         <img src={sass} alt='sass'/>
         <img src={react} alt='react'/>
