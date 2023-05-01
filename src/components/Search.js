@@ -18,7 +18,7 @@ const Search = () => {
     return (  <div className={styles.container}>
             
         <p>looking for ?</p>
-        <div>
+        <div className={styles.searchbox}>
         <input type='text' value={changed} onChange={changeHandler} placeholder='search it !'/>
         <button><span className={styles.searchIcon}>{searchIcon}</span></button>
 

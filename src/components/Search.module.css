@@ -8,6 +8,13 @@
     align-items: center;
 }
 
+
+.searchbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
 .container input {
     font-size: 2rem;
     width: 30vw;
@@ -15,7 +22,7 @@
     outline: none;
     border-radius: 10px 0 0 10px;
     text-align: center;
-    margin-top: 1.5rem;
+
 }
 
 button{
@@ -31,8 +38,11 @@ button{
 
 .searchIcon{
     font-size: x-large;
+
    
 }
+
+
 
 button:hover{
 color: rgb(255, 145, 0);
@@ -62,12 +72,22 @@ color: rgb(255, 145, 0);
     }
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:449px) {
     .container input {
         width: 60vw;
     }
 
     .container p {
         font-size: 3rem;
+    }
+
+
+    .searchIcon{
+        font-size: large;
+       
+    }
+
+    .searchbox{
+        display: flex;
     }
 }
