@@ -1,35 +1,30 @@
 //class component
 
-import React, { Component } from 'react';
+import React,{useState} from 'react';
 import styles from './Search.module.css'
-class Search extends Component {
 
-    constructor(){
-        super();
-        this.state = {
-            text : '',
+const Search = () => {
+
+    const [changed,setChange] = useState('')
+
+    const changeHandler = (e)=>{
+        setChange(e.target.value)
+
         }
-    }
-
-    changeHandler = (e)=>{
-        this.setState({
-text : e.target.value
-        })
-    }
-    render() { 
-
-        return (
-            <div className={styles.container}>
+   
+    return (  <div className={styles.container}>
             
-            <p>looking for ?</p>
-            <div>
-            <input type='text' value={this.state.text} onChange={this.changeHandler} placeholder='search it !'/>
-            <br/>
-<span>{this.state.text}</span>      
-            </div>
-            </div>
-        );
+        <p>looking for ?</p>
+        <div>
+        <input type='text' value={changed} onChange={changeHandler} placeholder='search it !'/>
+        <br/>
+<span>{changed}</span>      
+        </div>
+        </div> );
+
+
     }
-}
+   
+
  
 export default Search;
