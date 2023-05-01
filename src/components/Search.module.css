@@ -13,11 +13,32 @@
     width: 30vw;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     text-align: center;
+    margin-top: 1.5rem;
 }
 
+button{
+    font-size: 2rem;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    border-radius: 0 10px 10px 0;
+    padding-right: 10px;
+    cursor: pointer;
+    
+}
 
+.searchIcon{
+    font-size: x-large;
+   
+}
+
+button:hover{
+color: rgb(255, 145, 0);
+
+    
+}
 .container p {
     font-size: 4rem;
     font-weight: 300;

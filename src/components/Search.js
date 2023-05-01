@@ -2,8 +2,11 @@
 
 import React,{useState} from 'react';
 import styles from './Search.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faSearch} from '@fortawesome/free-solid-svg-icons'
 
 const Search = () => {
+    const searchIcon = <FontAwesomeIcon icon={faSearch}/>
 
     const [changed,setChange] = useState('')
 
@@ -17,8 +20,10 @@ const Search = () => {
         <p>looking for ?</p>
         <div>
         <input type='text' value={changed} onChange={changeHandler} placeholder='search it !'/>
-        <br/>
-<span>{changed}</span>      
+        <button><span className={styles.searchIcon}>{searchIcon}</span></button>
+
+
+
         </div>
         </div> );
 
