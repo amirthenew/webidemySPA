@@ -1,10 +1,39 @@
 
-import React, { Component } from 'react';
+import React from 'react';
+import styled from 'styled-components';
 
 const ContactUs = () => {
-    return ( <h1>
-        contactus
-        </h1> );
+
+
+    const styledContainer = styled.div`
+    width : 100%;
+    background-color : #000;
+    min-height : 100vh;
+    `
+    const StyledHeading = styled.h1`
+    color : #3f2;
+    font-size : 2rem;
+    `
+
+
+    return ( 
+
+
+    <div>
+    <styledContainer>
+    <StyledHeading>
+    contactus
+    </StyledHeading>
+    </styledContainer>
+    </div>
+
+
+
+
+        
+
+      
+  );
 }
  
 export default ContactUs;
