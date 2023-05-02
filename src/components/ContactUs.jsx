@@ -9,7 +9,7 @@ const ContactUs = () => {
     const Container = styled.div`
    width:100%;
    min-height:100vh;
-   background-color :#505050;
+   background-color :#cacaca;
     
     `
 
@@ -24,21 +24,22 @@ const ContactUs = () => {
     width : 90%;
     display : flex;
     margin : auto ;
+    padding : 1rem;
     `
 
     const Socialbox = styled.div`
     width : 40%;
-    background-color : #435;
+    background-color : rgb(255, 145, 0);
     height : 500px;
-
-    border-radius : 1rem;
+    border-radius : 1rem 0 0 1rem;
     
     `
 
     const ContactBox = styled.div`
     width : 60%;
-    background-color : #343;
+    background-color : #fff;
     height : 500px;
+    border-radius : 0 1rem 1rem 0;
     
     `
 
