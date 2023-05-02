@@ -5,10 +5,11 @@ import styled from 'styled-components';
 const ContactUs = () => {
 
 
-    const styledContainer = styled.div`
-    width : 100%;
-    background-color : #000;
-    min-height : 100vh;
+    const StyledContainer = styled.div`
+    width : 100px;
+    background-color : #3f3;
+    height : 100px;
+    color : #f43;
     `
     const StyledHeading = styled.h1`
     color : #3f2;
@@ -17,13 +18,16 @@ const ContactUs = () => {
 
 
     return ( 
-    <div>
-    <styledContainer>
-    <StyledHeading>
-    contactus
-    </StyledHeading>
-    </styledContainer>
-    </div>  
+ 
+    
+  <StyledContainer>
+   <StyledHeading>
+   contactus
+   </StyledHeading>
+   </StyledContainer>
+
+
+ 
   );
 }
  
