@@ -65,17 +65,30 @@ Contact Us
    
    <div>
 
-   <label for="first_name">First Name</label>
-   <input type="text" id="first_name" name="first_name"/>
-   <label for="last_name">Last Name</label>
-   <input type="text" id="last_name" name="last_name"/>
+
+   <input type="text" id="first_name" name="first_name" placeholder='First Name'/>
+
+   <input type="text" id="last_name" name="last_name" placeholder='Last Name'/>
    </div>
    <div>
-   <label for="email">Email</label>
-   <input type="email" id="email" name="email"/>
-   <label for="first_name">Phone number</label>
-   <input type="text" id="first_name" name="first_name"/>
+
+   <input type="email" id="email" name="email" placeholder='Email'/>
+
+   <input type="tel" id="Phone" name="Phone" placeholder='Phone'/>
    </div>
+
+   <div style={{display:'flex',flexDirection:'column'}}>
+   <p>message</p>
+   <textarea placeholder='type your message here' id="txtid" name="txtname" rows="3" cols="50" maxlength="200">
+
+   </textarea>
+
+
+   <button style={{width:'150px',display:'flex',justifyContent:'flex-end'}} type="submit" value="Submit">
+   Send it !
+   </button>
+   </div>
+
    </form>
 
 

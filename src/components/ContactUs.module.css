@@ -1,8 +1,43 @@
 
 input {
     font-size: larger;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 1rem;
+    margin: 1rem;
 }
+
+input:focus {
+border-bottom:  1px solid rgb(255, 145, 0);
+outline: none;
+}
+
+input:focus + label {
+    color: chocolate;
+}
+
+
 
 form {
     padding: 2rem;
+}
+
+textarea {   
+    resize: none;
+    border: none;
+
+    border-bottom: 1px solid #000;
+  }
+
+  textarea:focus{
+    outline: none;
+  }
+
+  p{
+    padding: 1rem;
+  }
+
+  input::-webkit-input-placeholder{
+color: rgb(255, 145, 0);  
+font-size:small ;
 }
