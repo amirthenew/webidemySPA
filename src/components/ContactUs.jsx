@@ -1,6 +1,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import styles from './ContactUs.module.css'
 
 const ContactUs = () => {
 
@@ -58,7 +59,26 @@ Contact Us
    </Socialbox>
 
    <ContactBox>
-   <input type='text'/>
+
+
+   <form>
+   
+   <div>
+
+   <label for="first_name">First Name</label>
+   <input type="text" id="first_name" name="first_name"/>
+   <label for="last_name">Last Name</label>
+   <input type="text" id="last_name" name="last_name"/>
+   </div>
+   <div>
+   <label for="email">Email</label>
+   <input type="email" id="email" name="email"/>
+   <label for="first_name">Phone number</label>
+   <input type="text" id="first_name" name="first_name"/>
+   </div>
+   </form>
+
+
    </ContactBox>
   </Maindiv>
 
