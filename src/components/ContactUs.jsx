@@ -1,11 +1,13 @@
 
-import React from 'react';
+import React,{useState} from 'react';
 import styled from 'styled-components';
 import styles from './ContactUs.module.css'
 
 const ContactUs = () => {
 
-
+const[inner,setInner] = useState('type your message here') 
+const [speed,setSpeed] = useState(50)
+const [count,counter] = useState(0)
 
     const Container = styled.div`
    width:100%;
@@ -22,22 +24,23 @@ const ContactUs = () => {
     
     `
     const Maindiv = styled.div`
-    width : 90%;
+    width : 80%;
     display : flex;
     margin : auto ;
     padding : 1rem;
     `
 
     const Socialbox = styled.div`
-    width : 40%;
+    width :45%;
     background-color : rgb(255, 145, 0);
     height : 500px;
     border-radius : 1rem 0 0 1rem;
+    overflow: hidden;
     
     `
 
     const ContactBox = styled.div`
-    width : 60%;
+    width : 55%;
     background-color : #fff;
     height : 500px;
     border-radius : 0 1rem 1rem 0;
@@ -57,35 +60,24 @@ Contact Us
    <Socialbox>
    My github
    </Socialbox>
-
    <ContactBox>
-
-
    <form>
-   
    <div>
-
-
-   <input type="text" id="first_name" name="first_name" placeholder='First Name'/>
-
-   <input type="text" id="last_name" name="last_name" placeholder='Last Name'/>
+   <input className={styles.Input} type="text" id="first_name" name="first_name" placeholder='First Name'/>
+   <input className={styles.Input} type="text" id="last_name" name="last_name" placeholder='Last Name'/>
    </div>
    <div>
-
-   <input type="email" id="email" name="email" placeholder='Email'/>
-
-   <input type="tel" id="Phone" name="Phone" placeholder='Phone'/>
+   <input className={styles.Input} type="email" id="email" name="email" placeholder='Email'/>
+   <input className={styles.Input} type="tel" id="Phone" name="Phone" placeholder='Phone'/>
    </div>
-
-   <div style={{display:'flex',flexDirection:'column'}}>
-   <p>message</p>
-   <textarea placeholder='type your message here' id="txtid" name="txtname" rows="3" cols="50" maxlength="200">
+   <div >
+   <textarea className={styles.txtarea} placeholder='type your message here' id="txtid" name="txtname" rows="3" maxlength="200">
 
    </textarea>
 
 
-   <button style={{width:'150px',display:'flex',justifyContent:'flex-end'}} type="submit" value="Submit">
-   Send it !
+   <button className={styles.Button} type="submit" value="Submit">
+   Send
    </button>
    </div>
 

@@ -1,20 +1,31 @@
 
-input {
-    font-size: larger;
+.Input {
+    font-size: large;
     border: none;
     border-bottom: 1px solid #000;
     padding: 1rem;
     margin: 1rem;
+    color: #6b6b6b;
 }
 
 input:focus {
 border-bottom:  1px solid rgb(255, 145, 0);
 outline: none;
+animation: lineblink 1s ease-in-out infinite  forwards;
 }
 
 input:focus + label {
     color: chocolate;
 }
+
+.Button { 
+
+ width: 150px;
+ display:flex;
+ justify-content:space-around;
+ font-size: large;
+}
+
 
 
 
@@ -25,9 +36,16 @@ form {
 textarea {   
     resize: none;
     border: none;
-
+    margin: 1rem;
     border-bottom: 1px solid #000;
   }
+
+
+  .txtarea{
+width: 85%;
+
+  }
+
 
   textarea:focus{
     outline: none;
@@ -40,4 +58,20 @@ textarea {
   input::-webkit-input-placeholder{
 color: rgb(255, 145, 0);  
 font-size:small ;
+}
+
+@keyframes lineblink {
+    
+0%{
+    border-bottom:  1px solid rgb(255, 145, 0);
+}
+
+50%{
+    border-bottom:  1px solid rgb(255, 255, 255);
+}
+
+100%{
+  border-bottom:  1px solid rgb(255, 145, 0);
+}
+
 }
