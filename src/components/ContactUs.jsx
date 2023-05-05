@@ -59,8 +59,22 @@ const ContactUs = () => {
 
  
       <Container>
+
       <StyledHeading>
-Contact Us
+      <Typewriter
+  
+      onInit={(typewriter)=> {
+    
+      typewriter
+       
+      .typeString("Contact us !")
+        
+      .pauseFor(1000)
+      .deleteAll()
+      .start()
+      .typeString("Contact us !");
+      }}
+      />
   </StyledHeading>
 
   <Maindiv>
@@ -79,9 +93,9 @@ Contact Us
    </div>
    <div >
    <textarea className={styles.txtarea} placeholder='type your message here' id="txtid" name="txtname" rows="3" maxlength="200">
-
+{}
    </textarea>
-
+   
 
    <button className={styles.Button} type="submit" value="Submit">
    Send
@@ -103,3 +117,6 @@ Contact Us
 }
  
 export default ContactUs;
+
+
+
