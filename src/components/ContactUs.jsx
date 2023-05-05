@@ -3,18 +3,12 @@ import React,{useState} from 'react';
 import styled from 'styled-components';
 import styles from './ContactUs.module.css'
 import Typewriter from "typewriter-effect";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const ContactUs = () => {
 
-// const[inner,setInner] = useState('type your message here') 
-// const [speed,setSpeed] = useState(50)
-// const [count,counter] = useState(0)
 
-// const typeWriter = ()=>{
-//   if(count<inner.length){
-//     setInner(document.querySelector('$txtid').innerHTML += inner.charAt(count))
-//   }
-// }
 
     const Container = styled.div`
    width:100%;
@@ -79,7 +73,7 @@ const ContactUs = () => {
 
   <Maindiv>
    <Socialbox>
-   My github
+   <span>{githhubIcon}</span>
    </Socialbox>
    <ContactBox>
    <form>
@@ -93,7 +87,7 @@ const ContactUs = () => {
    </div>
    <div >
    <textarea className={styles.txtarea} placeholder='type your message here' id="txtid" name="txtname" rows="3" maxlength="200">
-{}
+
    </textarea>
    
 
