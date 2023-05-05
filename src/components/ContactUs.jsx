@@ -4,7 +4,11 @@ import styled from 'styled-components';
 import styles from './ContactUs.module.css'
 import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import gitHubSvg from '../images/GitHub.svg'
+import instaIcon from '../images/Instagram.png'
+import vercelIcon from '../images/Vercel.png'
+import Outloook from '../images/outlook.png'
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
 
@@ -34,10 +38,23 @@ const ContactUs = () => {
     const Socialbox = styled.div`
     width :45%;
     background-color : rgb(255, 145, 0);
-    height : 500px;
     border-radius : 1rem 0 0 1rem;
     overflow: hidden;
+    display : flex;
+    flex-direction : column;
+
     
+    `
+
+    const IconBox = styled.div`
+width : 100%;
+padding-right : 1rem;
+display : flex;
+justify-content: center;
+align-items: center;
+    overflow: hidden;
+    margin : auto;
+
     `
 
     const ContactBox = styled.div`
@@ -73,7 +90,15 @@ const ContactUs = () => {
 
   <Maindiv>
    <Socialbox>
-   <span>{githhubIcon}</span>
+   <IconBox>
+   <Link to='https://github.com/amirthenew'><img className={styles.github}  src={gitHubSvg}/></Link>
+   <Link to='https://github.com/amirthenew'><img className={styles.instaIcon}  src={instaIcon}/></Link>
+   <Link to='https://github.com/amirthenew'><img className={styles.vercelIcon}  src={vercelIcon}/></Link>
+   <Link to='https://github.com/amirthenew'><img className={styles.Outloook}  src={Outloook}/></Link>
+
+   
+   </IconBox>
+
    </Socialbox>
    <ContactBox>
    <form>
