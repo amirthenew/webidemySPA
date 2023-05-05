@@ -62,18 +62,18 @@ const ContactUs = () => {
 
       <StyledHeading>
       <Typewriter
-  
-      onInit={(typewriter)=> {
+      options={
+        {
+          strings : ['contact us' , 'easy and fast !'],
+          autoStart:true,
+          loop : true,
     
-      typewriter
+        }
+      }
+    
        
-      .typeString("Contact us !")
-        
-      .pauseFor(1000)
-      .deleteAll()
-      .start()
-      .typeString("Contact us !");
-      }}
+
+
       />
   </StyledHeading>
 
