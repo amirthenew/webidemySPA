@@ -2,6 +2,7 @@
 import React,{useState} from 'react';
 import styled from 'styled-components';
 import styles from './ContactUs.module.css'
+import Typewriter from "typewriter-effect";
 
 const ContactUs = () => {
 
