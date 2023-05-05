@@ -5,9 +5,15 @@ import styles from './ContactUs.module.css'
 
 const ContactUs = () => {
 
-const[inner,setInner] = useState('type your message here') 
-const [speed,setSpeed] = useState(50)
-const [count,counter] = useState(0)
+// const[inner,setInner] = useState('type your message here') 
+// const [speed,setSpeed] = useState(50)
+// const [count,counter] = useState(0)
+
+// const typeWriter = ()=>{
+//   if(count<inner.length){
+//     setInner(document.querySelector('$txtid').innerHTML += inner.charAt(count))
+//   }
+// }
 
     const Container = styled.div`
    width:100%;
