@@ -126,7 +126,7 @@
         width: 100%;
         flex-direction: column;
         text-align: center;
-        animation: dropdown 1s ease-in;
+        animation: dropdown .5s ease-out;
 
     }
 }
