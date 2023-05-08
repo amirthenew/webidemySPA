@@ -3,7 +3,7 @@ import React,{useState} from 'react';
 import styled from 'styled-components';
 import styles from './ContactUs.module.css'
 import Typewriter from "typewriter-effect";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import gitHubSvg from '../images/GitHub.svg'
 import instaIcon from '../images/Instagram.png'
 import vercelIcon from '../images/Vercel.png'
@@ -29,12 +29,17 @@ const ContactUs = () => {
     
     `
     const Maindiv = styled.div`
-    width : 80%;
+    width : 90%;
+    min-height : 60vh;
     display : flex;
     margin : auto ;
     padding : 1rem;
     @media (max-width :450px){
       flex-direction : column;
+    }
+
+    @media (min-width : 320px) and (max-width :450px) {
+      width :85%;
     }
 
     `
@@ -48,8 +53,9 @@ const ContactUs = () => {
     flex-direction : column;
     @media (max-width :450px){
       width : 100%;
-      border-radius : 1rem;
+      border-radius : 1rem 1rem 0 0 ;
     }
+
 
     
     `
@@ -63,13 +69,19 @@ align-items: center;
     overflow: hidden;
     margin : auto;
 
+
+
     `
 
     const ContactBox = styled.div`
     width : 55%;
     background-color : #fff;
-    height : 500px;
+
     border-radius : 0 1rem 1rem 0;
+    @media (max-width :450px){
+      width : 100%;
+      border-radius : 0 0 1rem 1rem ;
+    }
     
     `
 
@@ -117,7 +129,7 @@ align-items: center;
    <input className={styles.Input} type="email" id="email" name="email" placeholder='Email'/>
    <input className={styles.Input} type="tel" id="Phone" name="Phone" placeholder='Phone'/>
    </div>
-   <div >
+
    <textarea className={styles.txtarea} placeholder='type your message here' id="txtid" name="txtname" rows="3" maxlength="200">
 
    </textarea>
@@ -126,7 +138,7 @@ align-items: center;
    <button className={styles.Button} type="submit" value="Submit">
    Send
    </button>
-   </div>
+
 
    </form>
 
