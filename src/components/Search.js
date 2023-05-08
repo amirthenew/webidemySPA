@@ -20,7 +20,7 @@ const Search = () => {
         <p>looking for ?</p>
         <div className={styles.searchbox}>
         <input type='text' value={changed} onChange={changeHandler} placeholder='search it !'/>
-        <button><span className={styles.searchIcon}>{searchIcon}</span></button>
+        <button className={styles.Button}><span className={styles.searchIcon}>{searchIcon}</span></button>
 
 
 

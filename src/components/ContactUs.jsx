@@ -33,6 +33,10 @@ const ContactUs = () => {
     display : flex;
     margin : auto ;
     padding : 1rem;
+    @media (max-width :450px){
+      flex-direction : column;
+    }
+
     `
 
     const Socialbox = styled.div`
@@ -42,6 +46,10 @@ const ContactUs = () => {
     overflow: hidden;
     display : flex;
     flex-direction : column;
+    @media (max-width :450px){
+      width : 100%;
+      border-radius : 1rem;
+    }
 
     
     `
@@ -70,7 +78,6 @@ align-items: center;
 
  
       <Container>
-
       <StyledHeading>
       <Typewriter
       options={
