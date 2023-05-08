@@ -22,7 +22,7 @@ const Search = () => {
             <Typewriter
             options={
               {
-                strings : ['looking for ?' , 'search it!'],
+                strings : ['looking for what ?' , 'search it !'],
                 autoStart:true,
                 loop : true,
           

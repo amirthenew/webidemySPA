@@ -7,8 +7,14 @@
 }
 
 .css3{
-    width: 120px !important;
+    -webkit-transform: scale(0.8);
 }
+
+.css3:hover{
+    -webkit-transform: scale(1);
+}
+
+
 .logos {
     display: flex;
     flex-direction: row;
@@ -37,7 +43,7 @@
     width: 10vw;
 }
 
-.logos img:hover {
+.logos img:not(.css3):hover {
     -webkit-transform: scale(1.2);
     cursor: pointer;
 }
