@@ -1,4 +1,4 @@
-import React ,{useState,useEffect}from "react";
+import React ,{useRef,useState,useEffect}from "react";
 import styles from './Navbar.module.css'
 import logo from '../images/logo.png'
 import { Link } from "react-router-dom";
@@ -7,8 +7,11 @@ import HamburgerMenuOpen from './HamburgerMenuOpen'
 import HamburgerMenuClose from './HambugerMenuClose'
 const Navbar = ()=>{
 
+    // const menuFirstCondition = useRef();
+
     useEffect(()=>{
         setItOpen(!isOpen)
+        // menuFirstCondition.current.display = 'none'
     },[])
 
 
@@ -36,7 +39,7 @@ return(<div className={styles.maindiv}>
     <div className={styles.container}>
         {isOpen ? (    
 <HamburgerMenuOpen handleClick={handleClick} isOpen={isOpen}/>) : 
-<HamburgerMenuClose handleClick={handleClick} isOpen={isOpen}/>
+<HamburgerMenuClose  handleClick={handleClick} isOpen={isOpen} setItOpen={setItOpen}/>
 
         
         }
