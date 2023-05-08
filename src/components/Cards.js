@@ -1,8 +1,8 @@
 import React ,{useState} from "react"
 import styles from './Cards.module.css'
 import Card from "./Card";
-import post1 from '../images/1.jpg'
-import post2 from '../images/2.jpg'
+import post1 from '../images/1.webp'
+import post2 from '../images/2.webp'
 import post3 from '../images/3.jpg'
 import post4 from '../images/4.jpg'
 
