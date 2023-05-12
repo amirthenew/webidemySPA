@@ -6,9 +6,11 @@
 
 .heading2{
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-top: 4rem;
+    position: relative;
+    animation: introtext 1s ease-in forwards ;
 }
 
 @media only screen and (max-width:1000px) {
@@ -24,4 +26,18 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+@keyframes introtext {
+    
+from {
+transform: translateX(-500px);
+}
+
+to {
+    transform: translateX(100px);
+    transform: scale(1.3);
+
+}
+
 }
