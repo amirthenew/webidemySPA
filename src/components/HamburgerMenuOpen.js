@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect ,useRef} from 'react';
 import styles from './HamburgerMenuOpen.module.css';
 import { Link } from 'react-router-dom';
 
 const HamburgerMenuOpen = (props) => {
+
+    
 const handleClick = props
     return ( 
 <div className={styles.container}>

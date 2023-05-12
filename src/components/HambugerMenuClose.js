@@ -1,15 +1,11 @@
-import React, { useState,useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './HamburgerMenuOpen.module.css';
 import { Link } from 'react-router-dom';
 
 const HamburgerMenuClose = (props) => {
     const {handleClick,isOpen,setItOpen} = props
-// const dropupfix = useRef() 
-useEffect(()=>{
-setItOpen(!!isOpen)
-    // dropupfix.current.style.display = 'none'
-}
-,[])
+
+
 
 
     return ( 
@@ -20,6 +16,5 @@ setItOpen(!!isOpen)
         <Link onClick={handleClick} className={styles.Link} to='/aboutus'><li className={styles.hamLi}>About Us</li></Link>
         <Link onClick={handleClick} className={styles.Link} to='/contactus'><li className={styles.hamLi}>Contact Us</li></Link>
         </ul>
-        {console.log('dropUp')}
     </div> )}
 export default HamburgerMenuClose;

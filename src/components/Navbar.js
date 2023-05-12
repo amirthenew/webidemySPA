@@ -7,11 +7,10 @@ import HamburgerMenuOpen from './HamburgerMenuOpen'
 import HamburgerMenuClose from './HambugerMenuClose'
 const Navbar = ()=>{
 
-    // const menuFirstCondition = useRef();
 
     useEffect(()=>{
         setItOpen(!isOpen)
-        // menuFirstCondition.current.display = 'none'
+
     },[])
 
 
