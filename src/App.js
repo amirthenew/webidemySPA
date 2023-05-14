@@ -4,10 +4,11 @@ import Footer from './components/Footer';
 import Landing from './components/Landing';
 import { Route ,Routes,Navigate} from "react-router-dom";
 import AboutUs from './components/AboutUs';
-import Details from './components/Details';
+import Blog from './components/Blog';
 import Page404 from './components/Page404';
 import Programmers from './components/Programmers';
 import ContactUs from './components/ContactUs';
+
 
 const App = () => {
 
@@ -20,8 +21,7 @@ const App = () => {
     <Route path ='/aboutus/*' element={<AboutUs/>}/>
     <Route path="/contactus" element={<ContactUs/>} />
     <Route path="programmers" element={<Programmers/>}/>
-    <Route path="drivers" element={<h1>drivers</h1>} />
-    <Route path='/products/:id' element={<Details/>}/>
+    <Route path="blog" element={<Blog/>} />
     <Route path ='/404' element={<Page404/>}/>
     <Route path ='/*' element={<Navigate to ="/404"/>}/>
 </Routes>

@@ -28,7 +28,7 @@ return(<div className={styles.maindiv}>
     <div className={styles.listContainer}>
     <ul className={styles.list}>
     <li><Link to='/'>Home</Link></li>
-    <li><Link to='/products'>Product</Link></li>
+    <li><Link to='/blog'>Blog</Link></li>
     <li><Link to='/aboutus'>About Us</Link></li>
     <li><Link to='/contactus'>Contact Us</Link></li>
     </ul>
