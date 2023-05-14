@@ -1,11 +1,13 @@
 .body{
     background-color: rgb(152, 152, 152);
+    padding: 2rem;
 }
 
 .container{
 display: flex;
-
 width: 90%;
+box-sizing: border-box;
+
 height: 100vh;
 border-radius: 5rem;
 overflow: hidden;

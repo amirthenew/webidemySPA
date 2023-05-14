@@ -7,8 +7,6 @@ const AboutUs = ()=>{
 
     return (<div className={styles.body}>
     
-    <h1>About us</h1>
-
     <div className={styles.container}>
 
     <div className={styles.leftside}>
