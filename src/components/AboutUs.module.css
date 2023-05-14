@@ -1,19 +1,30 @@
 .container{
 display: flex;
-background-color: brown;
-width: 100%;
+background-color: chocolate;
+width: 90%;
 height: 100vh;
+border-radius: 5rem;
+overflow: hidden;
+margin: auto;
 }
 
 .rightside{
 width: 50%;
-background-color: aqua;
 background: url(../images/profile2.jpeg);
-background-size: cover;
+background-size:cover;
 background-repeat: no-repeat;
+overflow: hidden;
+
 }
 
 .leftside{
 width: 50%;
 background-color: chocolate;
+padding: 3rem;
+}
+
+.aboutustext{
+color: #e2e2e2;
+    font-size: large;
+    text-indent: 2rem;
 }
