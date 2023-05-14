@@ -2,12 +2,14 @@
     background-color: rgb(152, 152, 152);
     padding: 2rem;
 }
+h1{
+
+}
 
 .container{
 display: flex;
 width: 90%;
 box-sizing: border-box;
-
 height: 100vh;
 border-radius: 5rem;
 overflow: hidden;
@@ -35,4 +37,10 @@ padding: 3rem;
 color: #e2e2e2;
     font-size: x-large;
     text-indent: 2rem;
+}
+
+.text{
+
+    text-align: center;
+    font-size: xx-large;
 }

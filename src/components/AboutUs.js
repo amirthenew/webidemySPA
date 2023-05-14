@@ -1,12 +1,29 @@
 import React from 'react';
 import styles from './AboutUs.module.css'
-
+import Typewriter from "typewriter-effect";
 
 
 const AboutUs = ()=>{
 
     return (<div className={styles.body}>
+<span  className={styles.text}>
+<Typewriter
+      options={
+        {
+          strings : ['About us','About me'],
+          autoStart:true,
+          loop : true,
     
+        }
+      }
+    
+       
+
+
+      />
+</span>
+        
+
     <div className={styles.container}>
 
     <div className={styles.leftside}>
