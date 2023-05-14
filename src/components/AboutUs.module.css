@@ -1,6 +1,10 @@
+.body{
+    background-color: rgb(152, 152, 152);
+}
+
 .container{
 display: flex;
-background-color: chocolate;
+
 width: 90%;
 height: 100vh;
 border-radius: 5rem;
@@ -22,9 +26,11 @@ width: 50%;
 background-color: chocolate;
 padding: 3rem;
 }
-
+.leftside h2{
+    color: rgb(50, 50, 50);
+}
 .aboutustext{
 color: #e2e2e2;
-    font-size: large;
+    font-size: x-large;
     text-indent: 2rem;
 }

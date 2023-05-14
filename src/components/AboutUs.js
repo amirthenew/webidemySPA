@@ -5,7 +5,7 @@ import styles from './AboutUs.module.css'
 
 const AboutUs = ()=>{
 
-    return (<div>
+    return (<div className={styles.body}>
     
     <h1>About us</h1>
 
