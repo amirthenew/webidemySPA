@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 const AboutUs = ()=>{
 
     return (<div className={styles.body}>
-<span  className={styles.text}>
+<span className={styles.text}>
 <Typewriter
       options={
         {
@@ -42,7 +42,7 @@ const AboutUs = ()=>{
     
     </div>
     <div className={styles.rightside}>
-    
+
     </div>
     </div>
 
