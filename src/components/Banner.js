@@ -18,8 +18,3 @@ const Banner = () => {
 export default Banner;
 
 
-
-// <div className={styles.image}>
-// </div>
-
-
