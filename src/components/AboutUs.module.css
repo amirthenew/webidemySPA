@@ -4,14 +4,16 @@
 }
 
 .container{
-    padding-top: 1rem;
+padding: 1rem 0 ;
 display: flex;
 width: 90%;
 box-sizing: border-box;
-height: 100vh;
-/* border-radius: 5rem; */
-overflow: hidden;
+border-radius: 3rem;
 margin: auto;
+min-height: 900px;
+
+
+
 }
 
 .rightside{
@@ -21,17 +23,21 @@ background-size:cover;
 background-repeat: no-repeat;
 overflow: hidden;
 display: flex;
-min-height: 400px;
+
+
+
 
 }
 
 .leftside{
 width: 50%;
 background-color: chocolate;
-padding: 3rem;
+padding: 1rem 0;
+
 }
 .leftside h2{
     color: rgb(50, 50, 50);
+    padding-left: 1rem;
 }
 .aboutustext{
 color: #e2e2e2;
@@ -48,40 +54,57 @@ color: #e2e2e2;
 }
 
 @media only screen and (max-width :450px) {
-    .container{
-
-
+     .container{
+        width: 100vw;
 flex-direction: column;
     display: flex;
+    margin: auto;
+    height: 150%;
+    justify-content: center;
+    align-items: center;
     }
     .rightside{
 
 
 
 background-size: cover;
-width: 100vw;
-height: 600px;
+width: 80%;
+height: 400px;
     }
 
     .leftside{
-        width: 100vw;
+        width: 80%;
+
 
 
     }
 
+    .aboutustext{
+        color: #e2e2e2;
+            font-size: large;
+            text-indent: 0;
+            text-align: center;
+        }
+
+
+        .leftside h2{
+            text-align: center;
+        }
+/*
         .aboutustext{
         color: #e2e2e2;
-            font-size: small;
+            font-size: large;
             text-indent: 2rem;
-        }
+        } */
+        
     }
 
 
-@media only screen and  (min-width : 320px) and (max-width :450px) {
+/* @media only screen and  (min-width : 320px) and (max-width :450px) {
       
     }
   
   
-  
+   */
    
   
