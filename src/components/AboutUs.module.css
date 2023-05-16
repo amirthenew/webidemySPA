@@ -9,7 +9,7 @@ display: flex;
 width: 90%;
 box-sizing: border-box;
 height: 100vh;
-border-radius: 5rem;
+/* border-radius: 5rem; */
 overflow: hidden;
 margin: auto;
 }
@@ -20,6 +20,8 @@ background: url(../images/profile2.jpeg);
 background-size:cover;
 background-repeat: no-repeat;
 overflow: hidden;
+display: flex;
+min-height: 400px;
 
 }
 
@@ -48,14 +50,23 @@ color: #e2e2e2;
 @media only screen and (max-width :450px) {
     .container{
 
-border-radius: 0;
+
 flex-direction: column;
-    justify-content: baseline;
+    display: flex;
     }
     .rightside{
-background:none;
-height: 250px;
-background-color: aqua;
+
+
+
+background-size: cover;
+width: 100vw;
+height: 600px;
+    }
+
+    .leftside{
+        width: 100vw;
+
+
     }
 
         .aboutustext{

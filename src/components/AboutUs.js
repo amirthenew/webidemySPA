@@ -26,6 +26,10 @@ const AboutUs = ()=>{
 
     <div className={styles.container}>
 
+    <div className={styles.rightside}>
+
+    </div>
+
     <div className={styles.leftside}>
     <h2>who am i ?</h2>
     <p className={styles.aboutustext}>
@@ -41,9 +45,7 @@ const AboutUs = ()=>{
     </p>
     
     </div>
-    <div className={styles.rightside}>
 
-    </div>
     </div>
 
     </div>)
