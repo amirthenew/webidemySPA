@@ -1,6 +1,8 @@
 
 .container{
-    height: 200px;
-    width: 100vw;
-    background-color: brown;
+    height:300px;
+    width: 100%;
+    background: url(../images/colors.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
