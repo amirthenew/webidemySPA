@@ -13,6 +13,17 @@
 
     width: 33.33%;
 }
+.aboutinfooter a{
+    color: #ffa600;
+    text-decoration: none;
+}
+.firstbox p{
+    width: 70%;
+    padding: 0.1rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+    
+}
 
 .footerbox ul {
     list-style-type: none;
