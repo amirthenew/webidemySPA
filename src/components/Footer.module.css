@@ -35,6 +35,11 @@
 
 }
 
+.quicklinks a{
+    color: #fff;
+    text-decoration: none;
+}
+
 .copyrightbar{
     background-color: rgb(0, 0, 0);
     color: #fff;
@@ -65,7 +70,41 @@
     flex-direction: column;
 }
 
-.mailicon{
+.mailicon,.telIcon{
     padding-top: 1rem;
     font-size: 1.5rem;
+}
+
+.mailicon a,.telIcon a {
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+}
+
+@media only screen and (max-width :450px) {
+
+    .footerbox{
+flex-direction: column;
+    }
+    
+    .firstbox,.secondbox,.thirdbox{
+
+        width: 100%;
+    }
+
+    .line{
+        width: 100%;
+    }
+    .firstbox p{
+        width: 100%;
+        border-bottom: 1px dotted #fff;
+        margin-bottom: 1rem;
+
+        
+    }
+
+    .quicklinks {
+        border-bottom: 1px dotted #fff;
+        margin-bottom: 1rem;
+    }
 }

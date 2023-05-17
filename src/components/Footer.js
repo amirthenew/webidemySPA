@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.css'
 import logo from '../images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {faPhone} from '@fortawesome/free-solid-svg-icons'
+
+
 const Footer = () => {
 
     const emailIcon = <FontAwesomeIcon icon={faEnvelope}/>
     const phoneIcon = <FontAwesomeIcon icon={faPhone}/>
+
     
 
 
@@ -30,20 +32,31 @@ it's a long story i fell in website design 4 years ago I had a background in thi
 </p>
 </div>
 <div className={styles.secondbox}>
+<h3>Quick links</h3>
+<br/>
 
-<ul>
-<li>home</li>
-<li>blog</li>
-<li>aboutus</li>
-<li>contact us</li>
+<ul className={styles.quicklinks}>
+<li><Link to='/'>Home page</Link></li>
+<li><Link to='/blog'>Blog</Link></li>
+<li><Link to='/aboutus'>About Us</Link></li>
+<li><Link to='/contactus'>Contact Us</Link></li>
+<li><Link to='/link1'>Link1</Link></li>
+<li><Link to='/link2'>Link2</Link></li>
+
 </ul>
 </div>
 <div className={styles.thirdbox}>
-
+<h3>check me on ...</h3>
+<br/>
+<div className={styles.line}></div>
 <div className={styles.iconbox}>
-<span className={styles.mailicon}>{emailIcon}</span>
-<span className={styles.mailicon}>{phoneIcon}</span>
-<span className={styles.mailicon}>{emailIcon}</span>
+<span className={styles.mailicon}>{emailIcon} <Link to="mailto:ah.abshari@gmail.com">ah.abshari@gmail.com</Link></span>
+<span className={styles.telIcon}>{phoneIcon} <Link to="tel:+989127756675">+98-912-7756675</Link></span>
+
+</div>
+
+<div className={styles.socialbox}>
+
 </div>
 
 </div>
