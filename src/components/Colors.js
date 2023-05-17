@@ -6,7 +6,7 @@ const Colors =()=>{
     return(
 
         <div className={Style.container}>
-        <h1>colors</h1>
+
         </div>
     )
 

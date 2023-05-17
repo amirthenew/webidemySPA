@@ -14,7 +14,15 @@
     width: 33.33%;
 }
 
+.footerbox ul {
+    list-style-type: none;
 
+}
+
+.footerbox ul li {
+   padding: .5rem;
+
+}
 
 .copyrightbar{
     background-color: rgb(0, 0, 0);
@@ -22,5 +30,22 @@
    text-align: center;
    position: relative;
    bottom: 0;
+
+}
+.logobar{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    
+}
+.logobar span {
+    margin-left: .5rem;
+}
+
+.line {
+    width: 70%;
+    height: 1px;
+    background-color: #fff;
+    
 
 }
