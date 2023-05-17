@@ -1,8 +1,13 @@
 import React from 'react';
 import styles from './Footer.module.css'
 import logo from '../images/logo.png'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 const Footer = () => {
+
+    const emailIcon = <FontAwesomeIcon icon={faEnvelope}/>
+
+
     return ( <div className={styles.container}>
         <div className={styles.footerbox}>
 <div className={styles.firstbox}>
@@ -13,6 +18,12 @@ const Footer = () => {
 <span>webidemy.com</span>
 </div>
 <div className={styles.line}></div>
+<div className={styles.iconbox}>
+<span className={styles.mailicon}>{emailIcon}</span>
+<span className={styles.mailicon}>{emailIcon}</span>
+<span className={styles.mailicon}>{emailIcon}</span>
+</div>
+
 </div>
 <div className={styles.secondbox}>
 

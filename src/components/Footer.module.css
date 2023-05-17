@@ -49,3 +49,12 @@
     
 
 }
+.iconbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.mailicon{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
