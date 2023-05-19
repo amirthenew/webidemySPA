@@ -5,7 +5,8 @@
     box-sizing: border-box;
     padding: 1rem;
 border-radius: 1rem;
-
+display: flex;
+flex-direction: column;
     margin: auto;
 
     
