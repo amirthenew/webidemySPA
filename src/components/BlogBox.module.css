@@ -1,7 +1,14 @@
-.container{
-    width: 100%;
-    background-color: cadetblue;
-    border: 1px solid #000;
+.blogcontainer{
+
+
+    border: 1px solid #404756;
+    box-sizing: border-box;
     padding: 1rem;
-    margin: 1rem;
+border-radius: 1rem;
+
+    margin: auto;
+
+    
+
+
 }
