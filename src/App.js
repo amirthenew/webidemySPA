@@ -7,6 +7,7 @@ import AboutUs from './components/AboutUs';
 import Blog from './components/Blog';
 import Page404 from './components/Page404';
 import ContactUs from './components/ContactUs';
+import Blog1 from './components/Blogpages/Blog1';
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
     <Route path="/blog" element={<Blog/>} />
     <Route path ='/404' element={<Page404/>}/>
     <Route path ='/*' element={<Navigate to ="/404"/>}/>
+    <Route path='/blog/blog1' element={<Blog1/>}/>
 </Routes>
 
 <Footer/>

@@ -17,7 +17,7 @@ const {id,title,desc,date} = props
         <p>
        {desc}
         </p>
-        <Link><span>Read more ...</span></Link>
+        <Link to='/blog/blog1'><span>Read more ...</span></Link>
         </div>
         <br/></div>
         
