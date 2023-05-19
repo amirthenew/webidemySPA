@@ -50,8 +50,8 @@ it's a long story i fell in website design 4 years ago I had a background in thi
 <br/>
 <div className={styles.line}></div>
 <div className={styles.iconbox}>
-<span className={styles.mailicon}>{emailIcon} <Link to="mailto:ah.abshari@gmail.com">ah.abshari@gmail.com</Link></span>
-<span className={styles.telIcon}>{phoneIcon} <Link to="tel:+989127756675">+98-912-7756675</Link></span>
+<span className={styles.mailicon}>{emailIcon} <a href='mailto:ah.abshari@gmail.com'>ah.abshari@gmail.com</a></span>
+<span className={styles.telIcon}>{phoneIcon} <a href='tel:+989127756675'>+989127756675</a></span>
 
 </div>
 
