@@ -5,8 +5,9 @@ import styles from './Blog.module.css'
 const Blog = () => {
 
   const[blog,setBlog]=useState([
-  {id:1,date:'1 dec 2023',title:'whats react',desc : ' its a long story i fell in website design 4 years ago I had a background in this profession and it was a reason that Ive been in this route for 4 years I was thinking on launch a startup in'},
-  {id:2,date:'1 dec 2023',title:'whats Javascript',desc : ' lorem ipsum is lorem ipsum lorem ipsum'}])
+  {id:1,date:'10 march 2023',title:'whats react',desc : ' its a long story i fell in website design 4 years ago I had a background in this profession and it was a reason that Ive been in this route for 4 years I was thinking on launch a startup in'},
+  {id:2,date:'1 apr 2023',title:'whats Javascript',desc : ' lorem ipsum is lorem ipsum lorem ipsum'}
+,{id:3,date:'1 may 2023',title:'whats Html Css',desc : ' lorem ipsum is lorem ipsum lorem ipsum'}])
     return (
 
       <div className={styles.maindiv}>

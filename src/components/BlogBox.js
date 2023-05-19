@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './BlogBox.module.css';
+import { Link } from 'react-router-dom';
 
 
 const BlogBox = (props) => {
@@ -16,7 +17,7 @@ const {id,title,desc,date} = props
         <p>
        {desc}
         </p>
-       
+        <Link><span>Read more ...</span></Link>
         </div>
         <br/></div>
         
