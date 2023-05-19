@@ -19,7 +19,7 @@ const App = () => {
 <Route path='/' element={<Landing/>}/>
     <Route path ='/aboutus/*' element={<AboutUs/>}/>
     <Route path="/contactus" element={<ContactUs/>} />
-    <Route path="blog" element={<Blog/>} />
+    <Route path="/blog" element={<Blog/>} />
     <Route path ='/404' element={<Page404/>}/>
     <Route path ='/*' element={<Navigate to ="/404"/>}/>
 </Routes>
