@@ -11,13 +11,19 @@ const {id,title,desc,date,src} = props
 
     return ( 
 <div><div className={styles.blogcontainer}>
+
+
+
         <h2>{id}</h2>
-        <img style={{width:'50px'}} src={src}/>
         <h2>{title}</h2>
         <span>{date}</span>
         
 
-        <p>
+
+
+<img style={{width:'70px',padding:'1rem'}} src={src}/>
+
+     <p>
        {desc}
         </p>
         <Link to='/blog/blog1'><span>Read more ...</span></Link>
