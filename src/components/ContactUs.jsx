@@ -122,10 +122,12 @@ align-items: center;
    <ContactBox>
    <form>
    <div>
+   <span className={styles.fillit}>.</span>
    <input className={styles.Input} type="text" id="first_name" name="first_name" placeholder='First Name'/>
    <input className={styles.Input} type="text" id="last_name" name="last_name" placeholder='Last Name'/>
    </div>
    <div>
+   
    <input className={styles.Input} type="email" id="email" name="email" placeholder='Email'/>
    <input className={styles.Input} type="tel" id="Phone" name="Phone" placeholder='Phone'/>
    </div>
