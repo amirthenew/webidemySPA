@@ -13,7 +13,6 @@ import { Link } from "react-router-dom";
 const ContactUs = () => {
 
 
-
     const Container = styled.div`
    width:100%;
    min-height:100vh;
@@ -123,13 +122,13 @@ align-items: center;
    <form>
    <div>
    <span className={styles.fillit}>.</span>
-   <input className={styles.Input} type="text" id="first_name" name="first_name" placeholder='First Name'/>
-   <input className={styles.Input} type="text" id="last_name" name="last_name" placeholder='Last Name'/>
+   <input className={styles.Input}  type="text" id="first_name" name="first_name" placeholder='First Name'/>
+   <input className={styles.Input}  type="text" id="last_name" name="last_name" placeholder='Last Name'/>
    </div>
    <div>
    
-   <input className={styles.Input} type="email" id="email" name="email" placeholder='Email'/>
-   <input className={styles.Input} type="tel" id="Phone" name="Phone" placeholder='Phone'/>
+   <input className={styles.Input}  type="email" id="email" name="email" placeholder='Email'/>
+   <input className={styles.Input}  type="tel" id="Phone" name="Phone" placeholder='Phone'/>
    </div>
 
    <textarea className={styles.txtarea} placeholder='type your message here' id="txtid" name="txtname" rows="3" maxlength="200">
